@@ -1,0 +1,748 @@
+@charset "utf-8";
+
+/* font */
+/* font-family: 'DM Serif Display', serif; */
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+
+@font-face {
+  font-family: "MBC1961M";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/MBC1961M.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GmarketSansLight";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff")
+    format("woff");
+}
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
+}
+@font-face {
+  font-family: "GmarketSansBold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff")
+    format("woff");
+}
+
+body {
+  background-color: #fbdd7d;
+  overflow-x: hidden;
+}
+
+section {
+  height: 100vh;
+}
+
+::selection {
+  color: #d61010;
+  background-color: #fbdd7d;
+}
+html::-webkit-scrollbar {
+  width: 8px;
+}
+html::-webkit-scrollbar-thumb {
+  background-color: #d61010;
+  border-radius: 2px;
+  border: #d61010 2px solid;
+}
+html::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* main */
+.main {
+  background-size: cover;
+  padding: 0px;
+  margin: 0;
+  position: relative;
+}
+.main .main-img {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  object-fit: cover;
+  position: absolute;
+}
+.main h3 img {
+  width: 150px;
+  position: absolute;
+  z-index: 9999;
+  top: 10px;
+  left: 10px;
+}
+.main .main-wrap {
+  position: relative;
+  opacity: 0;
+  transform: translateY(20px);
+}
+.main .main-wrap .logo {
+  position: absolute;
+  top: 35vh;
+  width: 550px;
+  height: 140px;
+  left: 20px;
+}
+.main .main-wrap .phone-box {
+  position: absolute;
+  width: 100%;
+}
+.main .main-wrap .phone-box img {
+  position: absolute;
+  width: 200px;
+  z-index: 500;
+}
+.main .main-wrap .phone-box .phone {
+  width: 300px;
+  top: 12vh;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 300;
+}
+.main .main-wrap .phone-box .box {
+  border-radius: 20px;
+  border: 8px solid #d61010;
+}
+.main .main-wrap .phone-box .matches {
+  left: 59%;
+  top: 30px;
+  transform: translateX(-50%);
+  width: 300px;
+}
+.main .main-wrap .phone-box .shadow {
+  top: 200px;
+  left: 39%;
+  transform: translateX(-50%);
+  width: 165px;
+}
+.main .main-wrap .phone-box .bnh {
+  top: 340px;
+  left: 41%;
+  transform: translateX(-50%);
+  width: 180px;
+}
+.main .main-wrap .phone-box .lip {
+  top: 400px;
+  left: 61%;
+  transform: translateX(-50%);
+  width: 150px;
+}
+.main .main-wrap .phone-box .beam {
+  top: 520px;
+  left: 36.5%;
+  transform: translateX(-50%);
+  width: 125px;
+}
+.main .main-wrap .phone-box .wno {
+  top: 630px;
+  left: 58.5%;
+  transform: translateX(-50%);
+  width: 120px;
+  border-radius: 50%;
+}
+.main .main-wrap .tag-box {
+  font-size: 80px;
+  color: #d61010;
+  position: absolute;
+  right: 20px;
+  top: 35vh;
+  font-family: "MBC1961M";
+}
+
+/* mega-hot */
+.mega-hot {
+  background: linear-gradient(
+      rgba(122, 29, 29, 0.527),
+      rgba(158, 16, 16, 0.719)
+    ),
+    url(../images/fire-649292.jpg) no-repeat 50%;
+  background-size: cover;
+  color: #fbdd7d;
+  text-align: center;
+  position: relative;
+  opacity: 0;
+}
+.mega-hot .container {
+  display: grid;
+  place-content: center;
+  height: 100%;
+}
+.mega-hot h3 {
+  font-family: "MBC1961M";
+  font-size: 84px;
+}
+.mega-hot .txt-box {
+  font-size: 48px;
+  letter-spacing: -4px;
+  line-height: 1.1;
+}
+.mega-hot .txt-box p {
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+}
+.mega-hot .txt-box p:nth-child(1) {
+  font-family: "GmarketSansLight";
+  color: #ffffff;
+}
+.mega-hot .txt-box p:nth-child(2) {
+  font-family: "GmarketSansBold";
+}
+.mega-hot .txt-box p .mega-hot {
+  display: inline-block;
+  color: #d61010;
+  background: url(../images/megahot.png) 50% no-repeat;
+  background-size: contain;
+  padding: 8px 10px 0;
+}
+
+/* products */
+.products {
+  padding: 10vh 0;
+  height: 390vh;
+  position: relative;
+}
+.products .box {
+  position: absolute;
+  width: 100%;
+  top: 42vh;
+}
+/* shadow */
+.products .s-title-box {
+  font-family: "GmarketSansLight";
+  color: #806257;
+  text-align: center;
+  font-size: 34px;
+  line-height: 1;
+}
+.products .s-title-box img {
+  width: 48px;
+}
+.products .s-title-box p:nth-child(4) {
+  font-family: "MBC1961M";
+  color: #d61010;
+  margin: 10px 0 50px;
+}
+.products .s-container {
+  display: flex;
+}
+.products .s-container .shadow {
+  width: 850px;
+  height: 500px;
+  object-fit: cover;
+}
+.products .s-container .s-txt-box {
+  font-size: 24px;
+  margin: 6vh 30px;
+}
+.products .s-container .s-txt-box .s-tag-box {
+  font-family: "GmarketSansLight";
+  line-height: 1.1;
+  margin-bottom: 30px;
+}
+.products .s-container .s-txt-box h3 img {
+  width: 350px;
+  opacity: 1;
+}
+.products .s-container .s-txt-box .s-name {
+  font-family: "GmarketSansMedium";
+  font-size: 26px;
+  color: #4b280e;
+}
+/* lip */
+.products .lip-box {
+  opacity: 0;
+  display: flex;
+  padding: 7vh 200px;
+  position: relative;
+}
+.products .l-container {
+  position: absolute;
+}
+.products .l-container .l-title-box {
+  font-family: "GmarketSansLight";
+  color: #806257;
+  font-size: 36px;
+  line-height: 1.2;
+  position: relative;
+}
+.products .l-container .l-title-box img {
+  position: absolute;
+  left: 40%;
+  transform: translateX(-50%);
+  width: 60px;
+  top: -90px;
+}
+.products .l-container .l-title-box .l-tag-box {
+  font-family: "MBC1961M";
+  color: #d61010;
+  margin-top: 10px;
+}
+.products .l-container h3 {
+  width: 500px;
+  position: absolute;
+  top: 200px;
+}
+.products .l-container .l-name {
+  font-family: "GmarketSansMedium";
+  font-size: 26px;
+  color: #4b280e;
+  text-align: end;
+  transform: translateY(200px);
+}
+.products .tint {
+  position: absolute;
+  right: 200px;
+  top: -140px;
+  width: 550px;
+}
+/* beam */
+.products .beam-box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 3vh 50px;
+}
+.products .b-name-box {
+  font-family: "GmarketSansMedium";
+  font-size: 28px;
+  color: #4b280e;
+}
+.products .b-name-box h3 img {
+  width: 350px;
+}
+.products .b-container {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: 20px auto;
+}
+.products .b-container .b-title-box {
+  font-family: "GmarketSansLight";
+  color: #806257;
+  font-size: 40px;
+  line-height: 1.1;
+}
+.products .b-container .b-title-box img {
+  width: 60px;
+}
+.products .b-container .beam {
+  width: 500px;
+  object-fit: contain;
+}
+.products .b-container .b-title-box .b-tag-box {
+  font-family: "MBC1961M";
+  color: #d61010;
+}
+
+/* magazine */
+.magazine {
+  position: relative;
+  height: 199vh;
+  overflow: hidden;
+}
+.magazine img {
+  position: absolute;
+  z-index: 300;
+  transform: translateY(-400px);
+}
+.magazine .mgz {
+  width: 500px;
+  box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.2);
+}
+.magazine .mgz1 {
+  left: 56%;
+  transform: translateX(-50%) rotate(15deg);
+  z-index: 500;
+  top: 35vh;
+}
+.magazine .mgz2 {
+  left: 45%;
+  transform: translateX(-50%) rotate(-5deg);
+  z-index: 400;
+  top: 40vh;
+}
+.magazine .bnhlogo {
+  width: 350px;
+  top: 95vh;
+  right: -120px;
+}
+.magazine .matches {
+  width: 700px;
+  top: 92vh;
+  left: -220px;
+}
+
+/* process01 */
+.process01 {
+  background: url(../images/bg01.png) no-repeat 100%;
+  background-size: contain;
+  background-position-y: 50%;
+  padding: 15vh 150px;
+  position: relative;
+  height: 180vh;
+}
+.process01 .title-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 700px;
+}
+.process01 .title-box .number {
+  background-color: #fdf5e6;
+  width: 100px;
+  height: 100px;
+  display: grid;
+  place-content: center;
+  color: #806257;
+  font-family: "DM Serif Display", serif;
+  font-weight: 600;
+  font-size: 48px;
+  border-radius: 50%;
+  border: #fdf5e6 1px solid;
+  position: relative;
+}
+.process01 .title-box .number::after {
+  content: "";
+  width: 1px;
+  height: 300vh;
+  background-color: #fdf5e6;
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  z-index: 1;
+}
+.process01 .title-box h3 {
+  font-family: "GmarketSansMedium";
+  font-size: 28px;
+  line-height: 1.2;
+  color: #806257;
+}
+.process01 .title-box h3 strong {
+  font-family: "MBC1961M";
+  color: #d61010;
+  font-weight: 400;
+  font-size: 38px;
+}
+.process01 img {
+  position: absolute;
+}
+.process01 .shadow01 {
+  width: 500px;
+  left: 30%;
+  transform: translateX(-50%);
+  top: 240px;
+}
+.process01 .shadow02 {
+  width: 500px;
+  top: 280px;
+  left: 54%;
+  z-index: 500;
+  transform: translateX(-50%);
+}
+.process01 .eye-sel {
+  background-color: #fdf5e6;
+  opacity: 0.7;
+  width: 350px;
+  font-family: "GmarketSansMedium";
+  font-size: 18px;
+  color: #806257;
+  border-radius: 10px;
+  position: absolute;
+  right: 17%;
+  z-index: 600;
+}
+.process01 .eye-sel li {
+  padding: 18px 15px;
+  border-bottom: #806257 2px solid;
+  position: relative;
+}
+.process01 .eye-sel li img {
+  width: 32px;
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.process01 .eye-sel li:last-of-type {
+  border-bottom: none;
+}
+
+/* process02 */
+.process02 {
+  background: url(../images/bg02.png) no-repeat 100%;
+  background-size: contain;
+  background-position-y: 50%;
+  padding: 15vh 150px;
+  position: relative;
+  height: 180vh;
+}
+.process02 .title-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 800px;
+}
+.process02 .title-box .number {
+  background-color: #fdf5e6;
+  width: 100px;
+  height: 100px;
+  display: grid;
+  place-content: center;
+  color: #806257;
+  font-family: "DM Serif Display", serif;
+  font-weight: 600;
+  font-size: 48px;
+  border-radius: 50%;
+  border: #fdf5e6 1px solid;
+  position: relative;
+}
+.process02 .title-box h3 {
+  font-family: "GmarketSansMedium";
+  font-size: 28px;
+  line-height: 1.2;
+  color: #806257;
+}
+.process02 .title-box h3 strong {
+  font-family: "MBC1961M";
+  color: #d61010;
+  font-weight: 400;
+  font-size: 38px;
+}
+.process02 img {
+  position: absolute;
+}
+.process02 .tint01 {
+  width: 810px;
+  top: 235px;
+  left: 37%;
+  transform: translateX(-50%);
+}
+.process02 .tint02 {
+  width: 350px;
+  top: 420px;
+  left: 65%;
+  transform: translateX(-50%);
+}
+.process02 .lip-sel {
+  background-color: #fdf5e6;
+  opacity: 0.7;
+  width: 340px;
+  font-family: "GmarketSansMedium";
+  font-size: 18px;
+  color: #806257;
+  border-radius: 10px;
+  position: absolute;
+  right: 12%;
+  z-index: 600;
+  top: 300px;
+}
+.process02 .lip-sel li {
+  padding: 18px 15px;
+  border-bottom: #806257 2px solid;
+  position: relative;
+}
+.process02 .lip-sel li img {
+  width: 32px;
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.process02 .lip-sel li:last-of-type {
+  border-bottom: none;
+}
+
+/* process03 */
+.process03 {
+  background: url(../images/bg03.png) no-repeat 100%;
+  background-size: contain;
+  background-position-y: 50%;
+  padding: 15vh 150px;
+  position: relative;
+  height: 180vh;
+}
+.process03 .title-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 715px;
+}
+.process03 .title-box .number {
+  background-color: #fdf5e6;
+  width: 100px;
+  height: 100px;
+  display: grid;
+  place-content: center;
+  color: #806257;
+  font-family: "DM Serif Display", serif;
+  font-weight: 600;
+  font-size: 48px;
+  border-radius: 50%;
+  border: #fdf5e6 1px solid;
+  position: relative;
+}
+.process03 .title-box h3 {
+  font-family: "GmarketSansMedium";
+  font-size: 28px;
+  line-height: 1.2;
+  color: #806257;
+}
+.process03 .title-box h3 strong {
+  font-family: "MBC1961M";
+  color: #d61010;
+  font-weight: 400;
+  font-size: 38px;
+}
+.process03 img {
+  position: absolute;
+}
+.process03 .beam01 {
+  width: 350px;
+  top: 250px;
+  left: 35%;
+  transform: translateX(-50%);
+}
+.process03 .beam02 {
+  width: 780px;
+  top: 300px;
+  left: 63%;
+  transform: translateX(-50%);
+  z-index: 500;
+}
+.process03 .beam-sel {
+  background-color: #fdf5e6;
+  opacity: 0.7;
+  width: 300px;
+  font-family: "GmarketSansMedium";
+  font-size: 18px;
+  color: #806257;
+  border-radius: 10px;
+  position: absolute;
+  left: 12%;
+  z-index: 600;
+  top: 590px;
+}
+.process03 .beam-sel li {
+  padding: 18px 15px;
+  border-bottom: #806257 2px solid;
+  position: relative;
+}
+.process03 .beam-sel li img {
+  width: 35px;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.process03 .beam-sel li:last-child img {
+  width: 42px;
+  right: 18px;
+}
+.process03 .beam-sel li:last-of-type {
+  border-bottom: none;
+}
+
+/* warning */
+.warning {
+  height: 130vh;
+}
+.warning-wrap {
+  position: relative;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  opacity: 0;
+  justify-content: center;
+}
+.warning img {
+  width: 240px;
+}
+.warning p {
+  color: #ffffff;
+  font-family: "MBC1961M";
+  border: 13px solid #ffffff;
+  border-radius: 10px;
+  font-size: 55px;
+  text-transform: uppercase;
+  padding: 10px;
+  width: 330px;
+  /* animation: blink 1s infinite; */
+}
+.warning .warning-box {
+  position: relative;
+  width: 1100px;
+  text-align: center;
+}
+.warning .warning-box img {
+  position: absolute;
+  width: 940px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.warning .warning-box h3 {
+  position: absolute;
+  font-size: 40px;
+  font-family: "GmarketSansBold";
+  width: 100%;
+  top: -5px;
+}
+.warning .warning-box h3 strong {
+  color: #d61010;
+}
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* outro */
+.outro {
+  position: relative;
+}
+.outro h3 {
+  text-align: right;
+  font-size: 45px;
+  font-family: "GmarketSansMedium";
+  line-height: 1;
+  position: absolute;
+  /* top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  right: 30px;
+  bottom: 35vh;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+}
+.outro h3 strong {
+  color: #d61010;
+}
+.outro h3 img {
+  position: absolute;
+  width: 32px;
+  top: 90px;
+  right: 290px;
+}
+.outro .bnh {
+  position: absolute;
+  bottom: 23vh;
+  left: 30px;
+  width: 850px;
+}
+
+/* footer */
+footer {
+  font-family: "GmarketSansLight";
+  font-size: 14px;
+  color: #d61010;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 20px 20px;
+}
+footer img {
+  width: 100px;
+}
