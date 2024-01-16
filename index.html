@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>lilybyred - burn&heat</title>
   <!-- favicon -->
-  <link rel="shortcut icon" href="./images/릴바레불꽃.png" type="image/x-icon">
+  <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
   <!-- reset -->
   <link rel="stylesheet" href="./styles/minireset.min.css" />
   <!-- styles -->
@@ -15,6 +15,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
   <!-- ScrollTrigger -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+  <!-- Lenis -->
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.32/dist/lenis.min.js"></script>
   <!-- js -->
   <script defer src="./index.js"></script>
 </head>
@@ -22,7 +24,7 @@
 <body>
   <!-- main -->
   <section class="main">
-    <img src="./images/burnnhit3.png" alt="메인화면" class="main-img">
+    <img src="./images/burnnhit3.png" alt="메인화면" class="main-img" />
     <h3 class="logo-main"><img src="./images/logo-main.png" alt="로고" /></h3>
     <!-- phone -->
     <div class="main-wrap">
@@ -46,10 +48,14 @@
   <!-- mega-hot -->
   <section class="section mega-hot">
     <div class="container">
+      <img src="./images/hot-line.png" alt="라인" class="line" />
       <h3>#웜앤온리 #웜톤화력올려</h3>
       <div class="txt-box">
         <p>무더위를 뚫고, 이번엔 웜톤 기강 잡으러 온</p>
-        <p>릴리바이레드의 <span class="mega-hot">MEGA HOT</span>웜 컬렉션</p>
+        <p>
+          릴리바이레드의
+          <span class="mega-hot-txt"><img src="./images/megahot.png" alt="배경" /><span>MEGA HOT</span></span>웜 컬렉션
+        </p>
       </div>
     </div>
   </section>
@@ -93,7 +99,9 @@
             <p>#핫과즙컬러</p>
           </div>
         </div>
-        <h3><img src="./images/레이어픽싱틴트.png" alt="레이어픽싱틴트" /></h3>
+        <h3>
+          <img src="./images/레이어픽싱틴트.png" alt="레이어픽싱틴트" />
+        </h3>
         <p class="l-name">글래시 레이어 픽싱 틴트</p>
       </div>
       <img src="./images/burnnhit1.gif" alt="틴트" class="tint" />
@@ -129,6 +137,7 @@
     <img src="./images/wno4.png" alt="이미지2" class="mgz mgz2" />
     <img src="./images/성냠.png" alt="성냥" class="matches" />
     <img src="./images/bnhlogo.png" alt="딱지" class="bnhlogo" />
+    <img src="./images/line.png" alt="라인" class="line" />
   </div>
 
   <!-- process01 -->
@@ -143,10 +152,18 @@
     <img src="./images/eye-p1.png" alt="섀도우1" class="shadow01" />
     <img src="./images/eye-p2.png" alt="섀도우2" class="shadow02" />
     <ul class="eye-sel">
-      <li>13 #복숭아의 따뜻한 찰나 <img src="./images/Peach.png" alt="복숭아"></li>
-      <li>14 #자몽의 뜨거운 찰나 <img src="./images/jamong.png" alt="자몽"></li>
-      <li>15 #체리의 타오르는 찰나 <img src="./images/cherry.png" alt="체리"></li>
-      <li>16 #레몬의 청량한 찰나 <img src="./images/lemon.png" alt="레몬"></li>
+      <li>
+        13 #복숭아의 따뜻한 찰나 <img src="./images/Peach.png" alt="복숭아" />
+      </li>
+      <li>
+        14 #자몽의 뜨거운 찰나 <img src="./images/jamong.png" alt="자몽" />
+      </li>
+      <li>
+        15 #체리의 타오르는 찰나 <img src="./images/cherry.png" alt="체리" />
+      </li>
+      <li>
+        16 #레몬의 청량한 찰나 <img src="./images/lemon.png" alt="레몬" />
+      </li>
     </ul>
   </section>
 
@@ -162,9 +179,9 @@
     <img src="./images/lip-p1.png" alt="틴트1" class="tint01" />
     <img src="./images/lip-p2.png" alt="틴트2" class="tint02" />
     <ul class="lip-sel">
-      <li>17 #썬피치드 <img src="./images/Peach.png" alt="복숭아"></li>
-      <li>18 #자몽트리거 <img src="./images/jamong.png" alt="자몽"></li>
-      <li>19 #체리피버 <img src="./images/cherry.png" alt="체리"></li>
+      <li>17 #썬피치드 <img src="./images/Peach.png" alt="복숭아" /></li>
+      <li>18 #자몽트리거 <img src="./images/jamong.png" alt="자몽" /></li>
+      <li>19 #체리피버 <img src="./images/cherry.png" alt="체리" /></li>
     </ul>
   </section>
 
@@ -180,8 +197,8 @@
     <img src="./images/beam-p1.png" alt="하이라이터1" class="beam01" />
     <img src="./images/beam-p2.png" alt="하이라이터2" class="beam02" />
     <ul class="beam-sel">
-      <li>03 #슈가빔 <img src="./images/sugar.png" alt="슈가"></li>
-      <li>04 #썬빔 <img src="./images/sun.png" alt="썬"></li>
+      <li>03 #슈가빔 <img src="./images/sugar.png" alt="슈가" /></li>
+      <li>04 #썬빔 <img src="./images/sun.png" alt="썬" /></li>
     </ul>
   </section>
 
@@ -199,21 +216,34 @@
 
   <!-- outro -->
   <section class="section outro">
+    <div class="span-box">
+      <span>LILY</span>
+      <span>CHEEKY</span>
+      <span>SASSY</span>
+    </div>
     <h3>
       뜨거운 여름,<br />릴리바이레드
       <strong>번앤힛</strong> 컬렉션으로<br />생기 온도 UP!
       <img src="./images/온도계.png" alt="온도계" />
     </h3>
-    <img src="./images/burnheat.png" alt="번앤힛" class="bnh" />
+    <p>올 여름 모두를 뜨겁고도 강렬하게 달아오르게 할 진짜 웜한 컬렉션</p>
+    <div class="link-box">
+      <a href="https://lilybyred.co.kr/product/search.html?banner_action=&keyword=%EB%B2%88%EC%95%A4%ED%9E%9B"
+        target="_blank" class="bnh-btn"><img src="./images/burnheat.png" alt="번앤힛" class="bnh" /></a>
+      <span>click!</span>
+      <a href="https://lilybyred.co.kr/product/search.html?banner_action=&keyword=%EB%B2%88%EC%95%A4%ED%9E%9B"
+        target="_blank" class="go">생기온도 올리러 가기!</a>
+    </div>
+    <img src="./images/line.png" alt="라인" class="line" />
   </section>
 
   <!-- footer -->
   <footer>
     <div>©Copyright,영은.2024</div>
     <div>Burn & Heat Collection Project</div>
-    <img src="./images/logo-main.png" alt="로고" />
+    <a href="https://youngeunoo.github.io/portfolio/" target="_blank">영은's Project</a>
+    <a href="https://lilybyred.co.kr/" target="_blank"><img src="./images/logo-main.png" alt="로고" /></a>
   </footer>
-
 </body>
 
 </html>
